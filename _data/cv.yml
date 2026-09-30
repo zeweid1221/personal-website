@@ -1,0 +1,104 @@
+cv:
+  name: Zewei Deng
+  label: Ph.D. Student in Industrial and Systems Engineering
+  email: deng0379@umn.edu
+  location: Minneapolis, MN
+  image: ""
+  summary: Ph.D. student developing statistical and coding-theoretic methods for trustworthy generative AI, LLM watermarking, provenance, and uncertainty-aware learning.
+
+  social_networks:
+    - network: GitHub
+      username: zeweid1221
+
+  sections:
+    Academic Interests:
+      - name: Trustworthy Generative AI
+        icon: fa-solid fa-shield-halved
+        keywords: "LLM watermarking, provenance, statistical learning, uncertainty quantification, temporal point processes, distributionally robust optimization"
+
+    Education:
+      - institution: University of Minnesota Twin Cities
+        location: Minneapolis, MN
+        area: Industrial and Systems Engineering
+        studyType: Ph.D.
+        start_date: 2025
+        end_date: Present
+        highlights:
+          - "Advisor: Prof. Liyan Xie"
+
+      - institution: University of Chicago
+        location: Chicago, IL
+        area: Applied Data Science
+        studyType: M.S.
+        start_date: 2023
+        end_date: 2024
+
+      - institution: University of Illinois Urbana-Champaign
+        location: Urbana-Champaign, IL
+        area: Statistics
+        studyType: B.S.
+        start_date: 2019
+        end_date: 2023
+        score: "GPA: 3.9/4.0"
+        highlights:
+          - Minors in Computer Science and Economics
+          - Highest Distinction in Statistics
+
+    Experience:
+      - company: University of Minnesota Twin Cities
+        position: Graduate Research Assistant
+        location: Minneapolis, MN
+        start_date: 2026
+        end_date: Present
+        summary: "Graduate Research Assistant since Summer 2026. Advisor: Prof. Liyan Xie"
+        highlights:
+          - Develop statistical and coding-theoretic methods for provenance, edit detection, and integrity verification of watermarked LLM outputs.
+          - Led an ECC-based post-generation edit detection project accepted to EMNLP 2026 Findings, spanning method design, implementation, experiments, visualization, and manuscript preparation.
+          - Extended the framework to local integrity checking, using error-correcting structure to verify where and how watermarked outputs have been modified.
+          - Study watermarkability across language models and methods for improving compatibility with logit-based watermarks.
+          - Develop uncertainty-aware sequential and agentic generative models, robust inference for delayed point processes, and physics-informed statistical learning methods.
+
+      - company: Chicago Booth School of Business, University of Chicago
+        position: Research Assistant
+        location: Chicago, IL
+        start_date: 2024
+        end_date: 2024
+        highlights:
+          - Worked with Prof. Dacheng Xiu on financial-text forecasting using BERT, LLaMA, and T5 representations with regression models for return and debt-related prediction.
+
+      - company: Alliant Credit Union / UChicago Data Science Institute
+        position: Machine Learning Capstone
+        location: Chicago, IL
+        start_date: 2024
+        end_date: 2024
+        highlights:
+          - Contributed to a client-facing machine-learning model development project with Alliant Credit Union.
+
+      - company: University of Minnesota Twin Cities
+        position: Teaching Assistant
+        location: Minneapolis, MN
+        start_date: Sep 2025
+        end_date: May 2026
+
+    Honors and Awards:
+      - title: Highest Distinction in Statistics
+        awarder: University of Illinois Urbana-Champaign
+        date: 2023
+      - title: Dean's List
+        awarder: University of Illinois Urbana-Champaign
+        date: 2020--2023
+        summary: "Fall 2020; Spring 2021; Fall 2021; Spring 2022; Fall 2022; Spring 2023"
+      - title: Honorable Mention
+        awarder: COMAP Mathematical Contest in Modeling
+        date: 2021
+
+    Skills:
+      - name: Programming
+        icon: fa-solid fa-code
+        keywords: "Python, R, SQL, Git/GitHub, LaTeX"
+      - name: Machine Learning and Scientific Computing
+        icon: fa-solid fa-laptop-code
+        keywords: "PyTorch, NumPy, pandas, scikit-learn"
+      - name: Research Methods
+        icon: fa-solid fa-flask
+        keywords: "LLM watermarking, statistical learning, temporal point processes, Wasserstein DRO, hypothesis testing"

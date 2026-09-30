@@ -1,0 +1,20 @@
+---
+layout: page
+permalink: /publications/
+title: Publications
+description: Peer-reviewed papers, preprints, and workshop papers on trustworthy AI, statistical learning, and optimization.
+nav: true
+nav_order: 2
+---
+
+<!-- _pages/publications.md -->
+
+<!-- Bibsearch Feature -->
+
+{% include bib_search.liquid %}
+
+<div class="publications">
+
+{% bibliography %}
+
+</div>

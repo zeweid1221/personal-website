@@ -1,0 +1,132 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.48in,top=0.4in,bottom=0.42in]{geometry}
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{ragged2e}
+
+\setmainfont{TeX Gyre Heros}
+\definecolor{umnmaroon}{HTML}{7A0019}
+\definecolor{muted}{HTML}{555555}
+\definecolor{rulegray}{HTML}{D8D2CC}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\emergencystretch}{2em}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\setlist[itemize]{
+  leftmargin=1.2em,
+  itemsep=0.7pt,
+  topsep=1.5pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{4.5pt}
+  {\color{umnmaroon}\bfseries\normalsize #1}\par
+  \vspace{1.2pt}
+  {\color{rulegray}\hrule height 0.6pt}
+  \vspace{2.5pt}
+}
+
+\newcommand{\entry}[4]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & \textbf{#2}\\[-1pt]
+    \textit{#3} & {\color{muted}\textit{#4}}
+  \end{tabularx}
+}
+
+\newcommand{\publication}[3]{%
+  \textbf{#1}\par
+  #2\par
+  {\color{muted}\textit{#3}}\par\vspace{5pt}
+}
+
+\begin{document}
+\RaggedRight
+
+\begin{center}
+  {\fontsize{18}{19}\selectfont\bfseries ZEWEI DENG}\\[1pt]
+  {\color{umnmaroon}\bfseries Ph.D. Student in Industrial and Systems Engineering}
+  \enspace\textbar\enspace University of Minnesota Twin Cities\\[2.5pt]
+  \small
+  \href{mailto:deng0379@umn.edu}{deng0379@umn.edu}
+  \enspace\textbar\enspace
+  \href{https://zeweid1221.github.io/al-folio/}{Website}
+  \enspace\textbar\enspace
+  \href{https://scholar.google.com/citations?user=fqZL5BoAAAAJ}{Google Scholar}
+  \enspace\textbar\enspace
+  \href{https://github.com/zeweid1221}{GitHub}\\[1.5pt]
+  {\color{muted}U.S. Work Authorization \(\cdot\) No Employer Sponsorship or CPT Required}
+\end{center}
+\vspace{-2pt}
+
+\cvsection{PROFILE}
+Develop statistical, coding-theoretic, and optimization methods for trustworthy AI, with research on LLM watermarking and provenance, distributionally robust inference, uncertainty-aware sequential modeling, and temporal point processes.
+
+\cvsection{EDUCATION}
+\entry{University of Minnesota Twin Cities}{2025--Present}{Ph.D. in Industrial and Systems Engineering; Advisor: Prof. Liyan Xie}{Minneapolis, MN}
+\vspace{2.5pt}
+\entry{University of Chicago}{2023--2024}{M.S. in Applied Data Science}{Chicago, IL}
+\vspace{2.5pt}
+\entry{University of Illinois Urbana-Champaign}{2019--2023}{B.S. in Statistics; Minors in Computer Science and Economics; GPA: 3.9/4.0}{Urbana-Champaign, IL}
+
+\cvsection{RESEARCH \& PROFESSIONAL EXPERIENCE}
+\entry{Graduate Research Assistant, University of Minnesota Twin Cities}{Summer 2026--Present}{Advisor: Prof. Liyan Xie}{Minneapolis, MN}
+\begin{itemize}
+  \item Develop statistical and coding-theoretic methods for LLM watermark provenance, edit detection, local integrity verification, and watermarkability.
+  \item Led an ECC watermark project accepted to EMNLP 2026 Findings, spanning method design, implementation, experiments, and manuscript preparation.
+  \item Develop uncertainty-aware sequential models and distributionally robust inference for delayed point processes under reporting delays and model misspecification.
+\end{itemize}
+
+\vspace{1pt}
+\entry{Research Assistant, Chicago Booth School of Business}{2024}{Advisor: Prof. Dacheng Xiu}{Chicago, IL}
+\begin{itemize}
+  \item Built financial-text forecasting pipelines using BERT, LLaMA, and T5 representations with regression models for return and debt-related prediction.
+\end{itemize}
+
+\vspace{1pt}
+\entry{Machine Learning Capstone, Alliant Credit Union / UChicago DSI}{2024}{Client-facing machine-learning project}{Chicago, IL}
+\begin{itemize}
+  \item Contributed to model development and evaluation for a credit-union analytics application.
+\end{itemize}
+
+\cvsection{PUBLICATIONS \& WORKING PAPERS}
+\publication
+  {Detecting Post-generation Edits to Watermarked LLM Outputs via Error-Correcting Codes.}
+  {\textbf{Zewei Deng}, Muhammad Siddeek, Liyan Xie, Mohamed Seif, Mengdi Wang, H. Vincent Poor, and Andrea Goldsmith.}
+  {EMNLP Findings, 2026. \href{https://github.com/zeweid1221/Sync_ECC_Watermark}{[Code]}}
+\publication
+  {Local Integrity Checking for Watermarked LLM Outputs via Error-Correcting Codes.}
+  {\textbf{Zewei Deng}, Muhammad Siddeek, Liyan Xie, Mohamed Seif, Mengdi Wang, H. Vincent Poor, and Andrea Goldsmith.}
+  {Preprint, 2026; planned submission to Transactions on Machine Learning Research (TMLR). \href{https://github.com/zeweid1221/ECC_Watermark}{[Code]}}
+\publication
+  {Distributionally Robust Inference for Delayed Point Processes.}
+  {\textbf{Zewei Deng}, Shuyi Chen, Shixiang Zhu, and Liyan Xie.}
+  {Working paper in preparation for submission to the Annals of Applied Statistics (AOAS); workshop version forthcoming at the INFORMS Data Mining and Decision Analytics Workshop, 2026.}
+\publication
+  {Watermarkability: Measuring and Improving Language-Model Compatibility with Logit-Based Watermarks.}
+  {\textbf{Zewei Deng}, Mohamed Seif, and Liyan Xie.}
+  {Preprint, 2026. \href{https://github.com/zeweid1221/LLM_Watermarkability}{[Code]}}
+\publication
+  {HawkesLLM: Semantic Uncertainty Propagation in Agentic Text Simulation.}
+  {\textbf{Zewei Deng}, Tinghan Ye, and Liyan Xie.}
+  {ICML Workshop on Statistical Frameworks for Uncertainty in Agentic Systems, 2026. \href{https://arxiv.org/abs/2605.23043}{[Paper]}}
+\publication
+  {Learning to Test: Physics-Informed Representation for Dynamical Instability Detection.}
+  {Minxing Zheng, \textbf{Zewei Deng}, Liyan Xie, and Shixiang Zhu.}
+  {arXiv:2604.10967, 2026. \href{https://arxiv.org/abs/2604.10967}{[Paper]}}
+
+\cvsection{TEACHING \& HONORS}
+\textbf{Teaching:} Teaching Assistant, University of Minnesota Twin Cities, Sep 2025--May 2026\\[1.5pt]
+\textbf{Honors:} Highest Distinction in Statistics; Dean's List (2020--2023); COMAP MCM Honorable Mention (2021)
+
+\end{document}

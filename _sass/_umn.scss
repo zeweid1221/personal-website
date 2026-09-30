@@ -1,0 +1,146 @@
+:root {
+  --umn-maroon: #7a0019;
+  --umn-maroon-dark: #5b0013;
+  --umn-gold: #ffcc33;
+  --global-bg-color: #f7f5f0;
+  --global-card-bg-color: #fff;
+  --global-divider-color: rgba(122, 0, 25, 0.13);
+  --global-theme-color: var(--umn-maroon);
+  --global-hover-color: var(--umn-maroon-dark);
+  --global-highlight-color: var(--umn-gold);
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: var(--umn-gold);
+  --global-hover-color: #ffe17a;
+  --global-hover-text-color: #1a1a1a;
+  --global-highlight-color: var(--umn-maroon);
+}
+
+#navbar {
+  border-top: 3px solid var(--umn-gold);
+}
+
+.card {
+  box-shadow: 0 8px 24px rgba(45, 35, 30, 0.08);
+}
+
+// RenderCV uses Bootstrap list-group markup, but the site's lightweight
+// compatibility layer does not reset native list markers. Keep CV entries on
+// one shared grid so dates, locations, and separators remain visually aligned.
+.cv ul.card-text.list-group {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cv ul.card-text.list-group > li.list-group-item {
+  display: block;
+  margin: 0;
+  padding: 1.15rem 0;
+  list-style: none;
+  border: 0;
+}
+
+.cv ul.card-text.list-group > li.list-group-item::marker {
+  content: "";
+}
+
+.cv ul.card-text.list-group > li.list-group-item + li.list-group-item {
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.cv ul.card-text.list-group > li.list-group-item > .row > .text-center:first-child {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.cv ul.card-text.list-group > li.list-group-item > .row > .text-center:first-child .table-cv {
+  width: 100%;
+  margin: 0 auto;
+  table-layout: fixed;
+}
+
+.cv ul.card-text.list-group > li.list-group-item > .row > .text-center:first-child .table-cv td {
+  text-align: center;
+}
+
+.cv ul.card-text.list-group > li.list-group-item .badge {
+  display: inline-flex;
+  min-width: 6.5rem !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.cv ul.card-text.list-group > li.list-group-item p.location {
+  margin: 0.4rem auto 0;
+  line-height: 1.35;
+  text-align: center;
+}
+
+@media (max-width: 575.98px) {
+  .cv ul.card-text.list-group > li.list-group-item > .row > .text-center:first-child {
+    justify-content: flex-start;
+    margin-bottom: 0.6rem;
+    text-align: left !important;
+  }
+
+  .cv ul.card-text.list-group > li.list-group-item > .row > .text-center:first-child .table-cv {
+    width: auto;
+    margin: 0;
+  }
+
+  .cv ul.card-text.list-group > li.list-group-item > .row > .text-center:first-child .table-cv td,
+  .cv ul.card-text.list-group > li.list-group-item p.location {
+    text-align: left;
+  }
+}
+
+.post article > h2:has(+ .publications) {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+}
+
+.post article > h2:has(+ .publications) a {
+  text-transform: capitalize;
+}
+
+.post article > h2:has(+ .publications)::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4.5rem;
+  height: 3px;
+  background: linear-gradient(90deg, var(--global-theme-color) 0 72%, var(--umn-gold) 72%);
+  border-radius: 999px;
+  content: "";
+}
+
+.post article > h2 + .publications {
+  margin-top: 0;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.post article > h2 + .publications > ol.bibliography > li {
+  margin-bottom: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--global-card-bg-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 24px rgba(45, 35, 30, 0.08);
+}
+
+@media (max-width: 575.98px) {
+  .post article > h2 + .publications > ol.bibliography > li {
+    padding: 1rem;
+  }
+}
+
+::selection {
+  color: #1a1a1a;
+  background: color-mix(in srgb, var(--umn-gold) 65%, white);
+}
