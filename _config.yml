@@ -18,8 +18,8 @@ icon: favicon-zd.svg # personal ZD monogram used as the browser favicon
 apple_touch_icon: favicon-zd-180.png # 180x180 PNG used for iOS home-screen bookmarks
 
 url: https://zeweid1221.github.io # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/. Leave blank for root
-repository: zeweid1221/al-folio
+baseurl: /personal-website # the subpath of your site, e.g. /blog/. Leave blank for root
+repository: zeweid1221/personal-website
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button

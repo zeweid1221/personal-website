@@ -15,7 +15,6 @@ Given only the observed text and the watermark key, the method parses structural
 - Localizes candidate insertions, deletions, and substitutions
 - Uses boundary anchors and feasible-codeword checks
 - [View project website](https://zeweid1221.github.io/Anchor-ECC-Website/)
-- [View code](https://github.com/zeweid1221/ECC_Watermark)
 
 {% include figure.liquid loading="eager" path="assets/img/watermark_pipeline.png" title="ECC-constrained watermark generation with structural blocks and boundary anchors" class="img-fluid rounded z-depth-1" %}
 
