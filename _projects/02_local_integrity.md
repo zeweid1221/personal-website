@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Local Integrity Checking
+title: Anchor-ECC
 description: Localizing suspicious regions in edited watermarked LLM outputs.
 img: assets/img/watermark_pipeline.png
 importance: 2
@@ -14,6 +14,7 @@ Given only the observed text and the watermark key, the method parses structural
 
 - Localizes candidate insertions, deletions, and substitutions
 - Uses boundary anchors and feasible-codeword checks
+- [Read the paper on arXiv](https://arxiv.org/abs/2609.38722)
 - [View project website](https://zeweid1221.github.io/Anchor-ECC-Website/)
 
 {% include figure.liquid loading="eager" path="assets/img/watermark_pipeline.png" title="ECC-constrained watermark generation with structural blocks and boundary anchors" class="img-fluid rounded z-depth-1" %}
