@@ -14,6 +14,7 @@ The work develops measurements of model–watermark compatibility and methods fo
 
 - Evaluates compatibility across language models and watermark rules
 - Studies the relationship between constraint satisfaction and text quality
+- [Read the paper on arXiv](https://arxiv.org/abs/2610.22810)
 
 {% include figure.liquid loading="eager" path="assets/img/watermarkability_pipeline.png" title="Watermarkability improvement pipeline" class="img-fluid rounded z-depth-1" %}
 
