@@ -14,6 +14,7 @@ We encode structured redundancy into LLM outputs using error-correcting codes. T
 
 - Accepted to **EMNLP 2026 Findings**
 - Covers method design, implementation, experiments, and evaluation
+- [Read the paper in the ACL Anthology](https://aclanthology.org/2026.findings-emnlp.2142/)
 
 {% include figure.liquid loading="eager" path="assets/img/ecc_edit_detection_centered.png" title="Error-correcting-code watermark generation with synchronization strings" class="img-fluid rounded z-depth-1" %}
 
