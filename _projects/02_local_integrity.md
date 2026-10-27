@@ -14,6 +14,7 @@ Given only the observed text and the watermark key, the method parses structural
 
 - Localizes candidate insertions, deletions, and substitutions
 - Uses boundary anchors and feasible-codeword checks
+- Submitted to **Transactions on Machine Learning Research (TMLR)**
 - [Read the paper on arXiv](https://arxiv.org/abs/2609.38722)
 - [View project website](https://zeweid1221.github.io/Anchor-ECC-Website/)
 
