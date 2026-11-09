@@ -40,6 +40,6 @@ My research develops statistical, coding-theoretic, and optimization methods for
 
 Before Minnesota, I earned an M.S. in Applied Data Science from the **University of Chicago** and a B.S. in Statistics from **UIUC**, with minors in Computer Science and Economics.
 
-See my [publications]({{ '/publications/' | relative_url }}), [research projects]({{ '/projects/' | relative_url }}), or [download my CV]({{ '/assets/pdf/Zewei_Deng_CV.pdf' | relative_url }}).
+See my [publications]({{ '/publications/' | relative_url }}), [research projects]({{ '/projects/' | relative_url }}), or [download my CV]({{ '/assets/pdf/Zewei_Deng_CV.pdf' | relative_url }}?v=20261109-8f9c23a).
 
 ---
