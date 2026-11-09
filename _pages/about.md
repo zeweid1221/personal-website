@@ -6,7 +6,7 @@ subtitle: Trustworthy AI · Distributional Robustness · Sequential Modeling
 
 profile:
   align: right
-  image: profile.jpg
+  image: profile-yosemite-2026.png
   image_circular: false # crops the image to make it circular
   more_info:
 
